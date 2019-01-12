@@ -15,5 +15,5 @@
 	<message key="plugins.generic.customHeader.displayName">Brugerdefineret header-plug-in</message>
 	<message key="plugins.generic.customHeader.description">Indsæt din egen header-kode på hjemmesiden</message>
 	<message key="plugins.generic.customHeader.manager.settings.description">Med denne plug-in aktiveret kan du tilføje brugerdefinerede header-koder til hjemmesiden. Dette kan f.eks. bruges til at indsætte brugerdefineret Javascript.</message>
-	<message key="plugins.generic.customHeader.content">Header-indhold</message>
+	<message key="plugins.generic.customHeader.headerContent">Header-indhold</message>
 </locale>

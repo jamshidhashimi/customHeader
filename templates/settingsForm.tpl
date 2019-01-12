@@ -25,8 +25,12 @@
 	{csrf}
 
 	{fbvFormArea id="customHeaderSettingsFormArea"}
-		{fbvFormSection for="headerContent" title="plugins.generic.customHeader.content"}
-			{fbvElement type="textarea" name="content" id="headerContent" value=$content height=$fbvStyles.height.TALL}
+		{fbvFormSection for="headerContent" title="plugins.generic.customHeader.headerContent"}
+			{fbvElement type="textarea" name="header_content" id="headerContent" value=$content height=$fbvStyles.height.TALL}
+		{/fbvFormSection}
+
+		{fbvFormSection for="footerContent" title="plugins.generic.customHeader.footerContent"}
+			{fbvElement type="textarea" name="footer_content" id="footerContent" value=$content height=$fbvStyles.height.TALL}
 		{/fbvFormSection}
 	{/fbvFormArea}
 

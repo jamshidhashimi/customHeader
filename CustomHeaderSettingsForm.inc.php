@@ -43,7 +43,8 @@ class CustomHeaderSettingsForm extends Form {
 	 */
 	function initData() {
 		$this->_data = array(
-			'content' => $this->_plugin->getSetting($this->_contextId, 'content'),
+			'header_content' => $this->_plugin->getSetting($this->_contextId, 'header_content'),
+			'footer_content' => $this->_plugin->getSetting($this->_contextId, 'footer_content'),
 		);
 	}
 
@@ -51,7 +52,7 @@ class CustomHeaderSettingsForm extends Form {
 	 * Assign form data to user-submitted data.
 	 */
 	function readInputData() {
-		$this->readUserVars(array('content'));
+		$this->readUserVars(array('header_content', 'footer_content'));
 	}
 
 	/**
@@ -68,8 +69,7 @@ class CustomHeaderSettingsForm extends Form {
 	 * Save settings.
 	 */
 	function execute() {
-		$this->_plugin->updateSetting($this->_contextId, 'content', $this->getData('content'), 'string');
+		$this->_plugin->updateSetting($this->_contextId, 'header_content', $this->getData('header_content'), 'string');
+		$this->_plugin->updateSetting($this->_contextId, 'footer_content', $this->getData('footer_content'), 'string');
 	}
 }
-
-?>

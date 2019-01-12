@@ -15,5 +15,5 @@
 	<message key="plugins.generic.customHeader.displayName">Complemento Encabezado personalizado</message>
 	<message key="plugins.generic.customHeader.description">Agregue encabezados arbitrarios a su sitio.</message>
 	<message key="plugins.generic.customHeader.manager.settings.description">Con este complemento habilitado se pueden agregar encabezados personalizados a su sitio de internet. Puede ser utilizado, por ejemplo, para agregar código Javascript personalizado.</message>
-	<message key="plugins.generic.customHeader.content">Contenido del encabezado</message>
+	<message key="plugins.generic.customHeader.headerContent">Contenido del encabezado</message>
 </locale>
